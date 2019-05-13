@@ -4,17 +4,17 @@ This is a very basic example of how to implement a simple calcualtor service in 
 
 It's composed of:
 
-- `/calcpb`: the protocol buffer package which contains the gRPC message and the service definitions.
-- `/server`: is the gRPC server that does the performs the add operation.
-- `/client`: is the gRPC client which communicate to the server by sending a request and receive the result of the add operation as response.
-- `generate.sh` is a script to generate the protocol buffers go code from the .proto file. 
+- `/calcpb`: the protocol buffers package which contains the gRPC message and service definitions.
+- `/server`: the gRPC server that performs the add operation.
+- `/client`: the gRPC client which communicate with the server by sending a request and receiving a result of the add operation as a response.
+- `generate.sh`: a script to generate the protocol buffers go code from the `.proto` file. 
 
 
 ## Usage
 
-1. Clone the repo inside your `$GOPATH`
+1. Clone the repo inside your `$GOPATH`.
 
-2. From the root of the project, install the required dependencies
+2. From the root of the project, install the required dependencies:
 ```
 go get
 ```
@@ -28,4 +28,3 @@ go run server/server.go
  ```bash
 go run client/client.go
 ```
-
