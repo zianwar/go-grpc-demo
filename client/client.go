@@ -5,7 +5,6 @@ import (
 	"log"
 
 	"google.golang.org/grpc"
-
 	"github.com/zianwar/go-rpc-calculator/calcpb"
 )
 
